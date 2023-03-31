@@ -1,0 +1,29 @@
+main{
+  h1 {
+    margin-top: 25px;
+    padding-left: 25px;
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    form {
+      width: 50%;
+      border: 1px solid black;
+      padding: 20px;
+      border-radius: 5px;
+      .btn {
+        background-color: black;
+        color: whitesmoke;
+      }
+    }
+  }
+}
+
+.footerContacto {
+  margin-top: 70px;
+  display: flex;
+  position: static;
+  justify-content: flex-end;
+  bottom: 0;
+}

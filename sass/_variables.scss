@@ -1,0 +1,37 @@
+/* VARIABLES, MIXINS, Y */
+
+$sombra-principal: 1px 1px 3px 3px;
+$bg-color: #dde7ee;
+$card-bg-color: #c1cddb;
+$txt-color: black;
+$header-color: black;
+$header-txt-color: whitesmoke;
+
+@mixin img-size ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin cursos-card-layout {
+    box-shadow: $sombra-principal;
+    padding: 25px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: $card-bg-color;
+}
+
+@mixin bio-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: $sombra-principal;
+    padding: 25px;
+    background-color: $card-bg-color;
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+

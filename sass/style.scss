@@ -1,0 +1,259 @@
+/* reset */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "variables";
+@import "index";
+@import "cursos";
+@import "galeria";
+@import "biografia";
+@import "contacto";
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+
+/* estilos generales */
+
+body {
+    background-color: $bg-color;
+    color: $txt-color;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.headerPrincipal {
+    font-family: 'Dosis', sans-serif;
+    background-color: $header-color;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    nav {
+        align-items: flex-end;
+        display: flex;
+        .navegacion {
+            display: flex;
+            align-items: center;
+            li {
+                list-style: none;
+                margin: 0px 5px;
+                padding: 0;
+                border-left: 3px solid white;
+                padding-left: 10px;
+                &:nth-child(1) {
+                    border-left: 0px;
+                }
+                a {
+                    color: $header-txt-color;
+                    font-size: 1.4rem;
+                    text-decoration: none;
+                    &:hover {
+                        color: blueviolet;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    margin-top: 15px;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+            list-style: none;
+            margin: 0px 10px;
+            padding: 0;
+            .logoRedes {
+                @include img-size(50px, 50px);
+            }
+        }
+    }  
+}
+
+.centrados {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 576px){
+
+.headerPrincipal {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerPrincipal a {
+    margin: auto;
+}
+ol, ul {
+    margin: auto;
+    padding-left: 0;
+    padding-bottom: 5px;
+}
+footer {
+    position: static;
+}
+
+footer ul {
+    justify-content: center;
+    margin: auto;
+}
+/* index */
+
+.carousel img {
+    height: 400px;
+}
+
+.sobreMi {
+    flex-direction: column;
+}
+
+.sobreMi img {
+    margin: auto;
+    margin-top: 25px;
+}
+
+.sobreMi h2 {
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.sobreMi p {
+    margin: 15px;
+}
+
+.iframesIndex {
+    flex-direction: column;
+}
+
+.iframesIndex aside {
+    box-shadow: none;
+}
+
+/* cursos */
+
+.seccionCursos {
+    margin-top: 0;
+}
+
+.cursoConteiner {
+    flex-direction: column;
+    margin: auto;
+}
+
+.cursoConteiner img {
+    box-shadow: none;
+    margin: 0;
+    width: auto;
+}
+
+.cursoConteiner div {
+    box-shadow: none;
+}
+
+.cursoConteiner div p {
+    margin-top: 10px;
+}
+
+/* galeria */
+
+.imgConteiner {
+    width: 99%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0px;
+    margin-top: 3px;
+}
+
+.imgConteiner .boxImg img{
+    height: 500px;
+}
+
+.imgConteiner .boxImg:nth-child(1){
+    display: none;
+}
+
+.imgConteiner .boxImg:nth-child(2){
+    grid-row-start: span 1;
+}
+
+.imgConteiner .boxImg:nth-child(4){
+    grid-row-start: span 1;
+}
+
+.imgConteiner .boxImg:nth-child(7){
+    grid-row-start: span 1;
+}
+
+.imgConteiner .boxImg:nth-child(8){
+    grid-column-start: span 1;
+}
+
+/* biografia */
+
+.biografiaMain {
+    margin-top: 0;
+}
+
+.biografiaMain img { 
+    box-shadow: none;
+    width: 100%;
+    height: 600px;
+}
+
+.biografiaMain p {
+    width: auto;
+}
+
+.seccionInicios {
+    display: flex;
+    flex-direction: column;
+}
+
+.textoInicios {
+    box-shadow: none;
+}
+
+.seccionCompitiendo {
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.textoCompitiendo {
+    box-shadow: none;
+}
+
+.seccionAlDiaDeHoy {
+   flex-direction: column;
+   margin-top: 0;
+}
+
+.textoAlDiaDeHoy {
+    box-shadow: none;
+}
+/* contacto*/
+
+.form-container {
+    margin-top: 15px;
+}
+
+.footerContacto {
+    position: static;
+    margin-top: 15px;
+}
+
+.footerContacto ul {
+    justify-content: center;
+    margin: auto;
+}
+
+}
