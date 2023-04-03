@@ -10,17 +10,13 @@
         width: 562px;
     }
     .seccionInicios {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include bio-seccion;
         .textoInicios {
             @include bio-card;           
         }
     }
     .seccionCompitiendo {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include bio-seccion;
         flex-direction: row-reverse;
         margin-top: 75px;
         .textoCompitiendo {
@@ -28,9 +24,7 @@
         }
     }
     .seccionAlDiaDeHoy {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include bio-seccion;
         margin-top: 75px;
         .textoAlDiaDeHoy {
             @include bio-card;
@@ -39,6 +33,7 @@
     .masNotas {
         margin: 50px 50px 5px 50px;
         box-shadow: $sombra-principal;
+        color: $txt-color-index;
         h2 {
             padding: 10px;
         }
@@ -49,7 +44,7 @@
                 padding: 0;
                 a {
                     text-decoration: none;
-                    color: $txt-color;
+                    color: $txt-color-index;
                 }
             }
         }

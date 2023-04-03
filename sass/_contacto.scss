@@ -1,5 +1,6 @@
 main{
   h1 {
+    color: black;
     margin-top: 25px;
     padding-left: 25px;
   }
@@ -8,13 +9,19 @@ main{
     justify-content: center;
     margin-top: 35px;
     form {
+      background-color: black;
       width: 50%;
       border: 1px solid black;
       padding: 20px;
       border-radius: 5px;
+      .mb-3{
+        .form-text{
+        color: white;
+        }
+      }
       .btn {
-        background-color: black;
-        color: whitesmoke;
+        background-color: white;
+        color: black;
       }
     }
   }

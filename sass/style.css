@@ -1,45 +1,79 @@
-/* reset */
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Ubuntu:ital,wght@0,400;1,300&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body p {
+  color: black;
 }
-
-/* VARIABLES, MIXINS, Y */
-.carousel img {
+body h2 {
+  color: black;
+}
+body .carousel img {
   height: 735px;
   width: 100%;
 }
-
-.sobreMi {
+body .sobreMi {
   display: flex;
   align-items: center;
 }
-.sobreMi img {
+body .sobreMi img {
   height: 275px;
   width: 275px;
   border-radius: 50%;
   margin: 100px 50px 100px 120px;
 }
-.sobreMi h2 {
+body .sobreMi h2 {
   margin-bottom: 15px;
   text-decoration-line: overline;
 }
-.sobreMi p {
+body .sobreMi p {
   margin-right: 150px;
   text-align: justify;
+  font-weight: 900;
 }
-
-.iframesIndex {
+body .iframesIndex {
   display: flex;
   justify-content: space-evenly;
 }
-.iframesIndex aside {
-  box-shadow: 1px 1px 3px 3px;
+body .sponsorSection {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+body .sponsorSection .sponsorLeft {
+  display: flex;
+  flex-direction: column;
+}
+body .sponsorSection .sponsorLeft .imgTxtIndex img {
+  height: 400px;
+  width: 230px;
+  margin-left: -25px;
+  margin-top: -150px;
+}
+body .sponsorSection .sponsorLeft .sponsorSectionTxt {
+  height: 250px;
+  width: 550px;
+}
+body .sponsorSection .sponsorLeft .sponsorSectionTxt p {
+  text-align: justify;
+  font-weight: 900;
+}
+body .sponsorSection .sponsorSectionImg {
+  display: flex;
+  flex-direction: column;
+}
+body .sponsorSection .sponsorSectionImg .indexImg img {
+  height: 500px;
+  width: 300px;
+  margin-bottom: -5.5px;
+}
+body .sponsorSection .sponsorSectionImg .indexLogo {
+  display: flex;
+  justify-content: space-between;
+}
+body .sponsorSection .sponsorSectionImg .indexLogo img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
 
-/* VARIABLES, MIXINS, Y */
 .seccionCursos {
   display: flex;
   flex-direction: column;
@@ -48,7 +82,7 @@
 .seccionCursos img {
   height: 600px;
   width: 400px;
-  box-shadow: 1px 1px 3px 3px;
+  box-shadow: 1px 1px 1px 1px;
 }
 .seccionCursos .cursoConteiner {
   display: flex;
@@ -56,14 +90,14 @@
   margin-left: 25px;
 }
 .seccionCursos .cursoConteiner .adentroCurso {
-  box-shadow: 1px 1px 3px 3px;
+  box-shadow: 1px 1px 1px 1px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-left: 25px;
   margin-right: 25px;
-  background-color: #c1cddb;
+  background-color: black;
 }
 .seccionCursos .cursoConteiner .adentroCurso p {
   text-align: justify;
@@ -112,7 +146,7 @@
   margin-top: 50px;
 }
 .biografiaMain img {
-  box-shadow: 1px 1px 3px 3px;
+  box-shadow: 1px 1px 1px 1px;
   height: 500px;
   width: 400px;
 }
@@ -127,9 +161,9 @@
 .biografiaMain .seccionInicios .textoInicios {
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 3px 3px;
+  box-shadow: 1px 1px 1px 1px;
   padding: 25px;
-  background-color: #c1cddb;
+  background-color: black;
 }
 .biografiaMain .seccionInicios .textoInicios h2 {
   text-align: center;
@@ -145,9 +179,9 @@
 .biografiaMain .seccionCompitiendo .textoCompitiendo {
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 3px 3px;
+  box-shadow: 1px 1px 1px 1px;
   padding: 25px;
-  background-color: #c1cddb;
+  background-color: black;
 }
 .biografiaMain .seccionCompitiendo .textoCompitiendo h2 {
   text-align: center;
@@ -162,9 +196,9 @@
 .biografiaMain .seccionAlDiaDeHoy .textoAlDiaDeHoy {
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 3px 3px;
+  box-shadow: 1px 1px 1px 1px;
   padding: 25px;
-  background-color: #c1cddb;
+  background-color: black;
 }
 .biografiaMain .seccionAlDiaDeHoy .textoAlDiaDeHoy h2 {
   text-align: center;
@@ -172,7 +206,8 @@
 }
 .biografiaMain .masNotas {
   margin: 50px 50px 5px 50px;
-  box-shadow: 1px 1px 3px 3px;
+  box-shadow: 1px 1px 1px 1px;
+  color: black;
 }
 .biografiaMain .masNotas h2 {
   padding: 10px;
@@ -188,6 +223,7 @@
 }
 
 main h1 {
+  color: black;
   margin-top: 25px;
   padding-left: 25px;
 }
@@ -197,14 +233,18 @@ main .form-container {
   margin-top: 35px;
 }
 main .form-container form {
+  background-color: black;
   width: 50%;
   border: 1px solid black;
   padding: 20px;
   border-radius: 5px;
 }
+main .form-container form .mb-3 .form-text {
+  color: white;
+}
 main .form-container form .btn {
-  background-color: black;
-  color: whitesmoke;
+  background-color: white;
+  color: black;
 }
 
 .footerContacto {
@@ -215,14 +255,25 @@ main .form-container form .btn {
   bottom: 0;
 }
 
-/* estilos generales */
-body {
-  background-color: #dde7ee;
-  color: black;
-  font-family: "Ubuntu", sans-serif;
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.headerPrincipal {
+/* estilos generales */
+body {
+  height: auto;
+  background-size: 100%;
+  background-image: url(../img/img-bg-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+}
+body .headerPrincipal {
   font-family: "Dosis", sans-serif;
   background-color: black;
   position: sticky;
@@ -231,48 +282,53 @@ body {
   justify-content: space-between;
   z-index: 100;
 }
-.headerPrincipal nav {
+body .headerPrincipal nav {
   align-items: flex-end;
   display: flex;
+  padding-bottom: 0px;
 }
-.headerPrincipal nav .navegacion {
+body .headerPrincipal nav .conteiner-fluid .navbar-collapse {
+  justify-content: flex-end;
+}
+body .headerPrincipal nav .navbar-nav {
   display: flex;
   align-items: center;
 }
-.headerPrincipal nav .navegacion li {
+body .headerPrincipal nav .navbar-nav li {
   list-style: none;
-  margin: 0px 5px;
-  padding: 0;
+  margin: 7px 5px;
   border-left: 3px solid white;
   padding-left: 10px;
 }
-.headerPrincipal nav .navegacion li:nth-child(1) {
+body .headerPrincipal nav .navbar-nav li:nth-child(1) {
   border-left: 0px;
 }
-.headerPrincipal nav .navegacion li a {
+body .headerPrincipal nav .navbar-nav li a {
   color: whitesmoke;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-decoration: none;
 }
-.headerPrincipal nav .navegacion li a:hover {
+body .headerPrincipal nav .navbar-nav li a:hover {
   color: blueviolet;
 }
-
-footer {
-  position: sticky;
+body footer {
+  background-color: black;
   bottom: 0;
-  margin-top: 15px;
+  margin-top: 10px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  position: static;
 }
-footer ul {
+body footer ul {
   display: flex;
   justify-content: flex-end;
 }
-footer ul li {
+body footer ul li {
   list-style: none;
   margin: 0px 10px;
   padding: 0;
 }
-footer ul li .logoRedes {
+body footer ul li .logoRedes {
   height: 50px;
   width: 50px;
 }
@@ -285,66 +341,114 @@ footer ul li .logoRedes {
 
 /* media queries */
 @media screen and (max-width: 576px) {
-  .headerPrincipal {
+  body {
+    background-image: none;
+    background-color: black;
+    color: whitesmoke;
+  }
+  body .headerPrincipal {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  body .headerPrincipal .navbar-brand img {
+    display: flex;
+    margin: auto;
+  }
+  body .headerPrincipal nav .navbar-nav {
+    flex-direction: column;
+    align-items: start;
+  }
+  body .headerPrincipal nav .navbar-nav li {
+    border-left: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  body footer {
+    margin-top: 10px;
+    padding-top: 0;
+  }
+  body footer ul {
     justify-content: center;
-  }
-  .headerPrincipal a {
     margin: auto;
-  }
-  ol, ul {
-    margin: auto;
-    padding-left: 0;
-    padding-bottom: 5px;
-  }
-  footer {
-    position: static;
-  }
-  footer ul {
-    justify-content: center;
-    margin: auto;
+    padding: 0;
   }
   /* index */
-  .carousel img {
+  body p {
+    color: whitesmoke;
+  }
+  body h2 {
+    color: whitesmoke;
+  }
+  body .carousel img {
     height: 400px;
   }
-  .sobreMi {
+  body .sobreMi {
     flex-direction: column;
   }
-  .sobreMi img {
+  body .sobreMi img {
     margin: auto;
     margin-top: 25px;
   }
-  .sobreMi h2 {
+  body .sobreMi h2 {
     margin-left: 15px;
     margin-top: 25px;
   }
-  .sobreMi p {
+  body .sobreMi p {
     margin: 15px;
   }
-  .iframesIndex {
+  body .iframesIndex {
     flex-direction: column;
   }
-  .iframesIndex aside {
+  body .iframesIndex aside {
+    padding: auto;
     box-shadow: none;
+  }
+  body .iframesIndex aside iframe {
+    margin-top: 15px;
+    width: 100%;
+  }
+  body .sponsorSection {
+    flex-direction: column;
+  }
+  body .sponsorSection h2 {
+    text-decoration: overline;
+  }
+  body .sponsorSection .sponsorLeft .imgTxtIndex {
+    display: none;
+  }
+  body .sponsorSection .sponsorSectionTxt {
+    margin: auto;
+    padding: 25px;
+    text-align: justify;
+  }
+  body .sponsorSection .sponsorSectionImg {
+    margin-top: 100px;
+  }
+  body .sponsorSection .sponsorSectionImg .indexImg {
+    display: none;
+  }
+  body .sponsorSection .sponsorSectionImg .indexLogo {
+    margin-bottom: 25px;
+    justify-content: center;
   }
   /* cursos */
-  .seccionCursos {
-    margin-top: 0;
-  }
-  .cursoConteiner {
-    flex-direction: column;
-    margin: auto;
-  }
-  .cursoConteiner img {
+  .seccionCursos img {
     box-shadow: none;
-    margin: 0;
+    height: 600px;
     width: auto;
   }
-  .cursoConteiner div {
+  .seccionCursos .cursoConteiner {
+    flex-direction: column;
+    margin: 0;
+  }
+  .seccionCursos .cursoConteiner .adentroCurso {
+    flex-direction: column;
     box-shadow: none;
   }
-  .cursoConteiner div p {
+  .seccionCursos .cursoConteiner .adentroCurso p {
     margin-top: 10px;
   }
   /* galeria */
@@ -375,46 +479,55 @@ footer ul li .logoRedes {
   }
   /* biografia */
   .biografiaMain {
-    margin-top: 0;
+    margin-top: 10px;
+  }
+  .biografiaMain p {
+    width: auto;
   }
   .biografiaMain img {
     box-shadow: none;
     width: 100%;
     height: 600px;
   }
-  .biografiaMain p {
-    width: auto;
-  }
-  .seccionInicios {
+  .biografiaMain .seccionInicios {
     display: flex;
     flex-direction: column;
   }
-  .textoInicios {
+  .biografiaMain .seccionInicios .textoInicios {
     box-shadow: none;
   }
-  .seccionCompitiendo {
+  .biografiaMain .seccionCompitiendo {
     flex-direction: column;
     margin-top: 0;
   }
-  .textoCompitiendo {
+  .biografiaMain .seccionCompitiendo .textoCompitiendo {
     box-shadow: none;
   }
-  .seccionAlDiaDeHoy {
+  .biografiaMain .seccionAlDiaDeHoy {
     flex-direction: column;
     margin-top: 0;
   }
-  .textoAlDiaDeHoy {
+  .biografiaMain .seccionAlDiaDeHoy .textoAlDiaDeHoy {
     box-shadow: none;
+  }
+  .biografiaMain .masNotas {
+    color: whitesmoke;
+  }
+  .biografiaMain .masNotas ul li a {
+    color: whitesmoke;
   }
   /* contacto*/
-  .form-container {
+  main h1 {
+    color: whitesmoke;
+  }
+  main .form-container {
     margin-top: 15px;
   }
-  .footerContacto {
+  main .footerContacto {
     position: static;
     margin-top: 15px;
   }
-  .footerContacto ul {
+  main .footerContacto ul {
     justify-content: center;
     margin: auto;
   }

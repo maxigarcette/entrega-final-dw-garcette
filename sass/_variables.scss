@@ -1,9 +1,8 @@
-/* VARIABLES, MIXINS, Y */
-
-$sombra-principal: 1px 1px 3px 3px;
-$bg-color: #dde7ee;
-$card-bg-color: #c1cddb;
-$txt-color: black;
+$sombra-principal: 1px 1px 1px 1px;
+$bg-color: black;
+$card-bg-color: black;
+$txt-color: whitesmoke;
+$txt-color-index: black;
 $header-color: black;
 $header-txt-color: whitesmoke;
 
@@ -33,5 +32,11 @@ $header-txt-color: whitesmoke;
         text-align: center;
         margin-bottom: 20px;
     }
+}
+
+@mixin bio-seccion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 

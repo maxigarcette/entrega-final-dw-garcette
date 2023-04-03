@@ -5,33 +5,51 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./sass/style.css">
         <title>IO</title>
     </head>
     <body>
         <header class="headerPrincipal">
-                <a href="./index.html"><img src="./img/logo-io.jpeg" alt="Img Logo"></a>
-                <nav>
-                    <ul class="navegacion">
-                        <li><a href="./index.html">INICIO</a></li>
-                        <li><a href="./pages/cursos.html">CURSOS</a></li>
-                        <li><a href="./pages/galeria.html">GALERIA</a></li>
-                        <li><a href="./pages/biografia.html">BIOGRAFIA</a></li>
-                        <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                    </ul>
-                </nav>                                      
+            <a class="navbar-brand" href="./index.html"><img src="../img/logo-io.jpeg" alt="Img Logo"/></a>
+            <nav class="navbar navbar-dark navbar-expand-lg" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/cursos.html">CURSOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/galeria.html">GALERIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/biografia.html">BIOGRAFIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>                                    
         </header>
         <main class="mainPrincipal">
             <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="img/img-carousel-1.JPG" class="d-block w-100" alt="...">
+                    <img src="img/img-carousel-1.JPG" class="d-block w-100" alt="img carousel 1">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/img-carousel-2.JPG" class="d-block w-100" alt="...">
+                    <img src="img/img-carousel-2.JPG" class="d-block w-100" alt="img carousel 2">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/img-carousel-3.jpg" class="d-block w-100" alt="...">
+                    <img src="img/img-carousel-3.jpg" class="d-block w-100" alt="img carousel 3">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
@@ -43,7 +61,7 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-            <section class="sobreMi">
+            <section class="sobreMi" data-aos="fade-up">
                 <div>
                     <img src="img/img-sobre-mi-2.jpg" alt="sobre mi">
                 </div>
@@ -53,15 +71,39 @@
                 </div>
             </section>
             <section class="iframesIndex">
-                <aside class="medioIzq">
+                <aside class="medioIzq" data-aos="fade-right">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/OpICLpMKp1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                         </iframe>
                 </aside>
-                <aside class="medioDer">
+                <aside class="medioDer" data-aos="fade-left">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/7eEe7zqZQYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                     </iframe>
                 </aside>
             </section> 
+            <section class="sponsorSection">
+                <div class="sponsorLeft" data-aos="fade-right">
+                    <div class="imgTxtIndex">
+                        <img src="img/img-index-2.png" alt="imagen index 2">
+                    </div>
+                    <div class="sponsorSectionTxt">
+                        <h2>
+                            Mis Sponsors
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi qui rerum doloribus soluta suscipit. Id sit placeat necessitatibus quaerat aliquam, enim magni? Facere dicta voluptatem adipisci, labore explicabo, quae expedita impedit, ea fugit voluptates ullam exercitationem doloribus eos maxime delectus iure soluta tenetur! Ullam laborum harum labore quasi obcaecati facere impedit hic doloribus quia provident qui pariatur, error voluptate dignissimos. Itaque eum ex ullam, dolores ipsum accusantium. Error voluptate officiis iusto, numquam temporibus, nulla vitae quisquam ut perspiciatis modi atque perferendis consequatur voluptatum, omnis nihil magni sequi fugit maxime nobis minus ratione? Rerum eum ipsum magni reprehenderit, impedit possimus!
+                        </p>
+                    </div>
+                </div>
+                <div class="sponsorSectionImg" data-aos="fade-left">
+                    <div class="indexImg">
+                        <img src="/img/img-index.png" alt="imagen index">
+                    </div>
+                    <div class="indexLogo">
+                        <a href="https://www.jonessnowboards.com/content/283-jones-snowboards-team-rider-inaki-odriozola"><img src="/img/logo-jones.jpeg" alt="logo jones"></a>
+                        <a href="https://www.splitboardbindings.com/ambassadors/inaki-odriozola/"><img src="/img/logo-karakoram.png" alt="logo karakoram"></a>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <ul>
@@ -72,5 +114,7 @@
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init({easing: 'ease-out-back', duration: 1000});</script>
     </body>
 </html>
