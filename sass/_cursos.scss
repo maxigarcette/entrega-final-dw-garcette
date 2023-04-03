@@ -11,9 +11,14 @@
         margin-bottom: 25px;
         margin-left: 25px;
         .adentroCurso {
+            color: $txt-color;
             @include cursos-card-layout;
             p {
                 text-align: justify;
+                color: $txt-color;
+            }
+            h2{
+                color: $txt-color;
             }
         }
     }

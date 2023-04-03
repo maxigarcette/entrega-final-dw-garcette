@@ -90,6 +90,7 @@ body .sponsorSection .sponsorSectionImg .indexLogo img {
   margin-left: 25px;
 }
 .seccionCursos .cursoConteiner .adentroCurso {
+  color: whitesmoke;
   box-shadow: 1px 1px 1px 1px;
   padding: 25px;
   display: flex;
@@ -101,6 +102,10 @@ body .sponsorSection .sponsorSectionImg .indexLogo img {
 }
 .seccionCursos .cursoConteiner .adentroCurso p {
   text-align: justify;
+  color: whitesmoke;
+}
+.seccionCursos .cursoConteiner .adentroCurso h2 {
+  color: whitesmoke;
 }
 
 .imgConteiner {
@@ -168,6 +173,10 @@ body .sponsorSection .sponsorSectionImg .indexLogo img {
 .biografiaMain .seccionInicios .textoInicios h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: whitesmoke;
+}
+.biografiaMain .seccionInicios .textoInicios p {
+  color: whitesmoke;
 }
 .biografiaMain .seccionCompitiendo {
   display: flex;
@@ -186,6 +195,10 @@ body .sponsorSection .sponsorSectionImg .indexLogo img {
 .biografiaMain .seccionCompitiendo .textoCompitiendo h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: whitesmoke;
+}
+.biografiaMain .seccionCompitiendo .textoCompitiendo p {
+  color: whitesmoke;
 }
 .biografiaMain .seccionAlDiaDeHoy {
   display: flex;
@@ -203,6 +216,10 @@ body .sponsorSection .sponsorSectionImg .indexLogo img {
 .biografiaMain .seccionAlDiaDeHoy .textoAlDiaDeHoy h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: whitesmoke;
+}
+.biografiaMain .seccionAlDiaDeHoy .textoAlDiaDeHoy p {
+  color: whitesmoke;
 }
 .biografiaMain .masNotas {
   margin: 50px 50px 5px 50px;
