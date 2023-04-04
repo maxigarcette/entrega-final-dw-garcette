@@ -1,74 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Ubuntu:ital,wght@0,400;1,300&display=swap");
-body p {
-  color: black;
-}
-body h2 {
-  color: black;
-}
-body .carousel img {
+.carousel img {
   height: 735px;
   width: 100%;
 }
-body .sobreMi {
+
+.sobreMi {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-body .sobreMi img {
+.sobreMi .textoSobreMi {
+  width: 900px;
+}
+.sobreMi .textoSobreMi h2 {
+  margin-bottom: 15px;
+  text-decoration-line: overline;
+  color: black;
+}
+.sobreMi .textoSobreMi p {
+  text-align: justify;
+  font-weight: 900;
+  color: black;
+}
+.sobreMi .imgSobreMi {
+  margin-right: 25px;
+}
+.sobreMi .imgSobreMi img {
   height: 275px;
   width: 275px;
   border-radius: 50%;
-  margin: 100px 50px 100px 120px;
 }
-body .sobreMi h2 {
-  margin-bottom: 15px;
-  text-decoration-line: overline;
-}
-body .sobreMi p {
-  margin-right: 150px;
-  text-align: justify;
-  font-weight: 900;
-}
-body .iframesIndex {
+
+.iframesIndex {
   display: flex;
   justify-content: space-evenly;
 }
-body .sponsorSection {
+
+.sponsorSection {
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
 }
-body .sponsorSection .sponsorLeft {
+.sponsorSection .sponsorLeft {
   display: flex;
   flex-direction: column;
 }
-body .sponsorSection .sponsorLeft .imgTxtIndex img {
+.sponsorSection .sponsorLeft .imgTxtIndex img {
   height: 400px;
   width: 230px;
   margin-left: -25px;
   margin-top: -150px;
 }
-body .sponsorSection .sponsorLeft .sponsorSectionTxt {
+.sponsorSection .sponsorLeft .sponsorSectionTxt {
   height: 250px;
   width: 550px;
 }
-body .sponsorSection .sponsorLeft .sponsorSectionTxt p {
+.sponsorSection .sponsorLeft .sponsorSectionTxt h2 {
+  color: black;
+}
+.sponsorSection .sponsorLeft .sponsorSectionTxt p {
   text-align: justify;
   font-weight: 900;
+  color: black;
 }
-body .sponsorSection .sponsorSectionImg {
+.sponsorSection .sponsorSectionImg {
   display: flex;
   flex-direction: column;
 }
-body .sponsorSection .sponsorSectionImg .indexImg img {
+.sponsorSection .sponsorSectionImg .indexImg img {
   height: 500px;
   width: 300px;
   margin-bottom: -5.5px;
 }
-body .sponsorSection .sponsorSectionImg .indexLogo {
+.sponsorSection .sponsorSectionImg .indexLogo {
   display: flex;
   justify-content: space-between;
 }
-body .sponsorSection .sponsorSectionImg .indexLogo img {
+.sponsorSection .sponsorSectionImg .indexLogo img {
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -77,28 +86,27 @@ body .sponsorSection .sponsorSectionImg .indexLogo img {
 .seccionCursos {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .seccionCursos img {
   height: 600px;
   width: 400px;
   box-shadow: 1px 1px 1px 1px;
+  margin-left: 25px;
 }
 .seccionCursos .cursoConteiner {
   display: flex;
   margin-bottom: 25px;
-  margin-left: 25px;
 }
 .seccionCursos .cursoConteiner .adentroCurso {
-  color: whitesmoke;
   box-shadow: 1px 1px 1px 1px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: black;
   margin-left: 25px;
   margin-right: 25px;
-  background-color: black;
 }
 .seccionCursos .cursoConteiner .adentroCurso p {
   text-align: justify;
@@ -112,7 +120,7 @@ body .sponsorSection .sponsorSectionImg .indexLogo img {
   width: 100%;
   max-width: 1100px;
   margin: auto;
-  margin-top: 50px;
+  padding-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 300px);
@@ -148,128 +156,143 @@ body .sponsorSection .sponsorSectionImg .indexLogo img {
 .biografiaMain {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  padding-top: 25px;
 }
 .biografiaMain img {
   box-shadow: 1px 1px 1px 1px;
   height: 500px;
   width: 400px;
 }
-.biografiaMain p {
-  width: 562px;
-}
-.biografiaMain .seccionInicios {
+
+.seccionInicios {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.biografiaMain .seccionInicios .textoInicios {
+.seccionInicios .textoInicios {
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 1px 1px;
   padding: 25px;
   background-color: black;
 }
-.biografiaMain .seccionInicios .textoInicios h2 {
+.seccionInicios .textoInicios h2 {
   text-align: center;
   margin-bottom: 20px;
   color: whitesmoke;
 }
-.biografiaMain .seccionInicios .textoInicios p {
+.seccionInicios .textoInicios p {
   color: whitesmoke;
+  width: 562px;
+  text-align: justify;
 }
-.biografiaMain .seccionCompitiendo {
+
+.seccionCompitiendo {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row-reverse;
   margin-top: 75px;
 }
-.biografiaMain .seccionCompitiendo .textoCompitiendo {
+.seccionCompitiendo .textoCompitiendo {
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 1px 1px;
   padding: 25px;
   background-color: black;
 }
-.biografiaMain .seccionCompitiendo .textoCompitiendo h2 {
+.seccionCompitiendo .textoCompitiendo h2 {
   text-align: center;
   margin-bottom: 20px;
   color: whitesmoke;
 }
-.biografiaMain .seccionCompitiendo .textoCompitiendo p {
+.seccionCompitiendo .textoCompitiendo p {
   color: whitesmoke;
+  width: 562px;
+  text-align: justify;
 }
-.biografiaMain .seccionAlDiaDeHoy {
+
+.seccionAlDiaDeHoy {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 75px;
 }
-.biografiaMain .seccionAlDiaDeHoy .textoAlDiaDeHoy {
+.seccionAlDiaDeHoy .textoAlDiaDeHoy {
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 1px 1px;
   padding: 25px;
   background-color: black;
 }
-.biografiaMain .seccionAlDiaDeHoy .textoAlDiaDeHoy h2 {
+.seccionAlDiaDeHoy .textoAlDiaDeHoy h2 {
   text-align: center;
   margin-bottom: 20px;
   color: whitesmoke;
 }
-.biografiaMain .seccionAlDiaDeHoy .textoAlDiaDeHoy p {
+.seccionAlDiaDeHoy .textoAlDiaDeHoy p {
   color: whitesmoke;
+  width: 562px;
+  text-align: justify;
 }
-.biografiaMain .masNotas {
-  margin: 50px 50px 5px 50px;
+
+.masNotas {
+  display: flex;
+  flex-direction: column;
   box-shadow: 1px 1px 1px 1px;
   color: black;
+  width: 80%;
+  align-self: center;
+  margin-bottom: 10px;
 }
-.biografiaMain .masNotas h2 {
+.masNotas h2 {
   padding: 10px;
 }
-.biografiaMain .masNotas ul li {
+.masNotas ul li {
   list-style: none;
   margin: 10px 10px;
   padding: 0;
 }
-.biografiaMain .masNotas ul li a {
+.masNotas ul li a {
   text-decoration: none;
   color: black;
 }
 
-main h1 {
+main {
+  padding-bottom: 20px;
+}
+
+h1 {
   color: black;
-  margin-top: 25px;
   padding-left: 25px;
 }
-main .form-container {
+
+.form-container {
   display: flex;
   justify-content: center;
   margin-top: 35px;
 }
-main .form-container form {
+.form-container form {
   background-color: black;
   width: 50%;
   border: 1px solid black;
   padding: 20px;
   border-radius: 5px;
 }
-main .form-container form .mb-3 .form-text {
+.form-container form .mb-3 .form-text {
   color: white;
 }
-main .form-container form .btn {
+.form-container form .btn {
   background-color: white;
   color: black;
 }
 
 .footerContacto {
-  margin-top: 70px;
   display: flex;
   position: static;
   justify-content: flex-end;
   bottom: 0;
+  padding-bottom: 0;
 }
 
 /* reset */
@@ -281,16 +304,21 @@ main .form-container form .btn {
 
 /* estilos generales */
 body {
+  background-color: black;
+  color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
   height: auto;
   background-size: 100%;
   background-image: url(../img/img-bg-2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  color: whitesmoke;
-  font-family: "Ubuntu", sans-serif;
 }
-body .headerPrincipal {
+
+.headerPrincipal {
   font-family: "Dosis", sans-serif;
   background-color: black;
   position: sticky;
@@ -299,53 +327,53 @@ body .headerPrincipal {
   justify-content: space-between;
   z-index: 100;
 }
-body .headerPrincipal nav {
+.headerPrincipal nav {
   align-items: flex-end;
   display: flex;
   padding-bottom: 0px;
 }
-body .headerPrincipal nav .conteiner-fluid .navbar-collapse {
+.headerPrincipal nav .conteiner-fluid .navbar-collapse {
   justify-content: flex-end;
 }
-body .headerPrincipal nav .navbar-nav {
+.headerPrincipal nav .navbar-nav {
   display: flex;
   align-items: center;
 }
-body .headerPrincipal nav .navbar-nav li {
+.headerPrincipal nav .navbar-nav li {
   list-style: none;
   margin: 7px 5px;
   border-left: 3px solid white;
   padding-left: 10px;
 }
-body .headerPrincipal nav .navbar-nav li:nth-child(1) {
+.headerPrincipal nav .navbar-nav li:nth-child(1) {
   border-left: 0px;
 }
-body .headerPrincipal nav .navbar-nav li a {
+.headerPrincipal nav .navbar-nav li a {
   color: whitesmoke;
   font-size: 1.3rem;
   text-decoration: none;
 }
-body .headerPrincipal nav .navbar-nav li a:hover {
+.headerPrincipal nav .navbar-nav li a:hover {
   color: blueviolet;
 }
-body footer {
+
+footer {
   background-color: black;
   bottom: 0;
-  margin-top: 10px;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   position: static;
 }
-body footer ul {
+footer ul {
   display: flex;
   justify-content: flex-end;
 }
-body footer ul li {
+footer ul li {
   list-style: none;
   margin: 0px 10px;
   padding: 0;
 }
-body footer ul li .logoRedes {
+footer ul li .logoRedes {
   height: 50px;
   width: 50px;
 }
@@ -358,97 +386,95 @@ body footer ul li .logoRedes {
 
 /* media queries */
 @media screen and (max-width: 576px) {
-  body {
+  main {
     background-image: none;
-    background-color: black;
-    color: whitesmoke;
   }
-  body .headerPrincipal {
+  .headerPrincipal {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 10px;
   }
-  body .headerPrincipal .navbar-brand img {
+  .headerPrincipal .navbar-brand img {
     display: flex;
     margin: auto;
   }
-  body .headerPrincipal nav .navbar-nav {
+  .headerPrincipal nav .navbar-nav {
     flex-direction: column;
     align-items: start;
   }
-  body .headerPrincipal nav .navbar-nav li {
+  .headerPrincipal nav .navbar-nav li {
     border-left: 0px;
     padding-left: 0px;
     display: flex;
     flex-direction: column;
   }
-  body footer {
+  footer {
     margin-top: 10px;
     padding-top: 0;
   }
-  body footer ul {
+  footer ul {
     justify-content: center;
     margin: auto;
     padding: 0;
   }
   /* index */
-  body p {
-    color: whitesmoke;
-  }
-  body h2 {
-    color: whitesmoke;
-  }
-  body .carousel img {
+  .carousel img {
     height: 400px;
   }
-  body .sobreMi {
+  .sobreMi {
     flex-direction: column;
+    align-items: center;
   }
-  body .sobreMi img {
-    margin: auto;
+  .sobreMi .textoSobreMi {
+    width: 90%;
+  }
+  .sobreMi .textoSobreMi h2 {
+    margin-top: 25px;
+    color: whitesmoke;
+  }
+  .sobreMi .textoSobreMi p {
+    color: whitesmoke;
+  }
+  .sobreMi .imgSobreMi img {
     margin-top: 25px;
   }
-  body .sobreMi h2 {
-    margin-left: 15px;
-    margin-top: 25px;
-  }
-  body .sobreMi p {
-    margin: 15px;
-  }
-  body .iframesIndex {
+  .iframesIndex {
     flex-direction: column;
   }
-  body .iframesIndex aside {
-    padding: auto;
-    box-shadow: none;
+  .iframesIndex aside {
+    margin-bottom: 15px;
   }
-  body .iframesIndex aside iframe {
-    margin-top: 15px;
+  .iframesIndex aside iframe {
     width: 100%;
   }
-  body .sponsorSection {
+  .sponsorSection {
     flex-direction: column;
+    justify-content: space-around;
   }
-  body .sponsorSection h2 {
-    text-decoration: overline;
+  .sponsorSection .sponsorLeft {
+    align-items: center;
   }
-  body .sponsorSection .sponsorLeft .imgTxtIndex {
+  .sponsorSection .sponsorLeft .imgTxtIndex {
     display: none;
   }
-  body .sponsorSection .sponsorSectionTxt {
-    margin: auto;
-    padding: 25px;
+  .sponsorSection .sponsorLeft .sponsorSectionTxt {
+    margin-top: 15px;
+    width: 90%;
+    height: auto;
     text-align: justify;
   }
-  body .sponsorSection .sponsorSectionImg {
-    margin-top: 100px;
+  .sponsorSection .sponsorLeft .sponsorSectionTxt h2 {
+    color: whitesmoke;
+    text-decoration: overline;
   }
-  body .sponsorSection .sponsorSectionImg .indexImg {
+  .sponsorSection .sponsorLeft .sponsorSectionTxt p {
+    color: whitesmoke;
+  }
+  .sponsorSection .sponsorSectionImg .indexImg {
     display: none;
   }
-  body .sponsorSection .sponsorSectionImg .indexLogo {
-    margin-bottom: 25px;
+  .sponsorSection .sponsorSectionImg .indexLogo {
     justify-content: center;
   }
   /* cursos */
@@ -496,55 +522,61 @@ body footer ul li .logoRedes {
   }
   /* biografia */
   .biografiaMain {
-    margin-top: 10px;
-  }
-  .biografiaMain p {
-    width: auto;
+    padding: 0;
   }
   .biografiaMain img {
     box-shadow: none;
-    width: 100%;
     height: 600px;
+    width: 99%;
   }
-  .biografiaMain .seccionInicios {
+  .seccionInicios {
     display: flex;
     flex-direction: column;
   }
-  .biografiaMain .seccionInicios .textoInicios {
+  .seccionInicios .textoInicios {
     box-shadow: none;
   }
-  .biografiaMain .seccionCompitiendo {
+  .seccionInicios .textoInicios p {
+    width: auto;
+  }
+  .seccionCompitiendo {
     flex-direction: column;
     margin-top: 0;
   }
-  .biografiaMain .seccionCompitiendo .textoCompitiendo {
+  .seccionCompitiendo .textoCompitiendo {
     box-shadow: none;
   }
-  .biografiaMain .seccionAlDiaDeHoy {
+  .seccionCompitiendo .textoCompitiendo p {
+    width: auto;
+  }
+  .seccionAlDiaDeHoy {
     flex-direction: column;
     margin-top: 0;
   }
-  .biografiaMain .seccionAlDiaDeHoy .textoAlDiaDeHoy {
+  .seccionAlDiaDeHoy .textoAlDiaDeHoy {
     box-shadow: none;
   }
-  .biografiaMain .masNotas {
+  .seccionAlDiaDeHoy .textoAlDiaDeHoy p {
+    width: auto;
+  }
+  .masNotas {
     color: whitesmoke;
   }
-  .biografiaMain .masNotas ul li a {
+  .masNotas ul li a {
     color: whitesmoke;
   }
   /* contacto*/
-  main h1 {
+  h1 {
     color: whitesmoke;
   }
-  main .form-container {
+  .form-container {
     margin-top: 15px;
   }
-  main .footerContacto {
+  .footerContacto {
     position: static;
     margin-top: 15px;
   }
-  main .footerContacto ul {
+  .footerContacto ul {
     justify-content: center;
     margin: auto;
   }

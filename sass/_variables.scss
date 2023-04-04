@@ -17,9 +17,9 @@ $header-txt-color: whitesmoke;
     display: flex ;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: $card-bg-color;
     margin-left: 25px;
     margin-right: 25px;
-    background-color: $card-bg-color;
 }
 
 @mixin bio-card {
@@ -35,6 +35,8 @@ $header-txt-color: whitesmoke;
     }
     p{
     color: $txt-color;
+    width: 562px;
+    text-align: justify;
     }
 }
 

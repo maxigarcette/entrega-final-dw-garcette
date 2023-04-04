@@ -1,17 +1,16 @@
 .seccionCursos {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    padding-top: 50px;
     img {
         @include img-size(400px, 600px);
         box-shadow: $sombra-principal;
+        margin-left: 25px;
     }
     .cursoConteiner {
         display: flex;
         margin-bottom: 25px;
-        margin-left: 25px;
         .adentroCurso {
-            color: $txt-color;
             @include cursos-card-layout;
             p {
                 text-align: justify;

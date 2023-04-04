@@ -1,36 +1,37 @@
 main{
-  h1 {
-    color: black;
-    margin-top: 25px;
-    padding-left: 25px;
-  }
-  .form-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-    form {
-      background-color: black;
-      width: 50%;
-      border: 1px solid black;
-      padding: 20px;
-      border-radius: 5px;
-      .mb-3{
-        .form-text{
-        color: white;
-        }
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: black;
+  padding-left: 25px;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  form {
+    background-color: black;
+    width: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    .mb-3{
+      .form-text{
+      color: white;
       }
-      .btn {
-        background-color: white;
-        color: black;
-      }
+    }
+    .btn {
+      background-color: white;
+      color: black;
     }
   }
 }
 
 .footerContacto {
-  margin-top: 70px;
   display: flex;
   position: static;
   justify-content: flex-end;
   bottom: 0;
+  padding-bottom: 0;
 }

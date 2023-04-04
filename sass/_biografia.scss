@@ -1,51 +1,53 @@
 .biografiaMain {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    padding-top: 25px;
     img{
         box-shadow: $sombra-principal;
         @include img-size (400px, 500px);
     }
-    p {
-        width: 562px;
+}
+
+.seccionInicios {
+    @include bio-seccion;
+    .textoInicios {
+        @include bio-card;           
     }
-    .seccionInicios {
-        @include bio-seccion;
-        .textoInicios {
-            @include bio-card;           
-        }
+}
+.seccionCompitiendo {
+    @include bio-seccion;
+    flex-direction: row-reverse;
+    margin-top: 75px;
+    .textoCompitiendo {
+        @include bio-card;
     }
-    .seccionCompitiendo {
-        @include bio-seccion;
-        flex-direction: row-reverse;
-        margin-top: 75px;
-        .textoCompitiendo {
-           @include bio-card;
-        }
+}
+.seccionAlDiaDeHoy {
+    @include bio-seccion;
+    margin-top: 75px;
+    .textoAlDiaDeHoy {
+        @include bio-card;
     }
-    .seccionAlDiaDeHoy {
-        @include bio-seccion;
-        margin-top: 75px;
-        .textoAlDiaDeHoy {
-            @include bio-card;
-        }
+}
+.masNotas {
+    display: flex;
+    flex-direction: column;
+    box-shadow: $sombra-principal;
+    color: $txt-color-index;
+    width: 80%;
+    align-self: center;
+    margin-bottom: 10px;
+    h2 {
+        padding: 10px;
     }
-    .masNotas {
-        margin: 50px 50px 5px 50px;
-        box-shadow: $sombra-principal;
-        color: $txt-color-index;
-        h2 {
-            padding: 10px;
-        }
-        ul {
-            li {
-                list-style: none;
-                margin: 10px 10px;
-                padding: 0;
-                a {
-                    text-decoration: none;
-                    color: $txt-color-index;
-                }
+    ul {
+        li {
+            list-style: none;
+            margin: 10px 10px;
+            padding: 0;
+            a {
+                text-decoration: none;
+                color: $txt-color-index;
             }
         }
     }
