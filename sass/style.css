@@ -91,7 +91,7 @@
 .seccionCursos img {
   height: 600px;
   width: 400px;
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: none;
   margin-left: 25px;
 }
 .seccionCursos .cursoConteiner {
@@ -99,7 +99,7 @@
   margin-bottom: 25px;
 }
 .seccionCursos .cursoConteiner .adentroCurso {
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: none;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -159,7 +159,7 @@
   padding-top: 25px;
 }
 .biografiaMain img {
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: none;
   height: 500px;
   width: 400px;
 }
@@ -172,7 +172,7 @@
 .seccionInicios .textoInicios {
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: none;
   padding: 25px;
   background-color: black;
 }
@@ -197,7 +197,7 @@
 .seccionCompitiendo .textoCompitiendo {
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: none;
   padding: 25px;
   background-color: black;
 }
@@ -221,7 +221,7 @@
 .seccionAlDiaDeHoy .textoAlDiaDeHoy {
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: none;
   padding: 25px;
   background-color: black;
 }
@@ -239,7 +239,7 @@
 .masNotas {
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 1px 1px;
+  border: 1px solid black;
   color: black;
   width: 80%;
   align-self: center;
@@ -257,6 +257,9 @@
 .masNotas ul li a {
   text-decoration: none;
   color: black;
+}
+.masNotas ul li a:hover {
+  color: blueviolet;
 }
 
 main {
@@ -480,6 +483,7 @@ footer ul li .logoRedes {
   }
   /* cursos */
   .seccionCursos img {
+    margin-left: 0;
     box-shadow: none;
     height: 600px;
     width: auto;
@@ -562,6 +566,7 @@ footer ul li .logoRedes {
   }
   .masNotas {
     color: whitesmoke;
+    border: 1px solid white;
   }
   .masNotas ul li a {
     color: whitesmoke;
