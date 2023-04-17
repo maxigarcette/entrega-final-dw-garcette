@@ -39,6 +39,13 @@ main {
     display: flex;
     justify-content: space-between;
     z-index: 100;
+    a{
+        img{
+            height: 100px;
+            width: 350px;
+            margin: 10px;
+        }
+    }
     nav {
         align-items: flex-end;
         display: flex;
@@ -91,14 +98,9 @@ footer {
     }  
 }
 
-
-.centrados {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
 /* media queries */
+
+/* mobile */
 
 @media screen and (max-width: 576px){
 
@@ -112,9 +114,10 @@ footer {
         justify-content: space-between;
         padding-bottom: 10px;
         .navbar-brand {
+            margin: auto;
             img{
-                display: flex;
-                margin: auto;
+                width: 300px;
+                height: 80px;
             }
         }
         nav {
@@ -148,17 +151,21 @@ footer {
     .sobreMi {
         flex-direction: column;
         align-items: center;
+        padding-top: 0px;
         .textoSobreMi {
             width: 90%;
+            padding-top: 0px;
             h2 {
                 margin-top: 25px;
                 color: $txt-color;
             }
             p {
                 color: $txt-color;
+                background-color: rgba(192, 192, 192, 0);
             }
         }
         .imgSobreMi {
+            margin: 0px;
             img {
                 margin-top: 25px;
             }
@@ -192,6 +199,7 @@ footer {
                 }
                 p{
                     color: $txt-color;
+                    background-color: rgba(192, 192, 192, 0);
                 }
             }
         }
@@ -211,7 +219,7 @@ footer {
         img {
             margin-left: 0;
             box-shadow: none;
-            @include img-size(auto, 600px)
+            @include img-size(auto, 500px)
         }
         .cursoConteiner {
             flex-direction: column;
@@ -219,6 +227,7 @@ footer {
             .adentroCurso {
                 flex-direction: column;
                 box-shadow: none;
+                margin: 0px;
                 p {
                     margin-top: 10px;
                 }
@@ -233,7 +242,7 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
         grid-gap: 0px;
-        margin-top: 3px;
+        padding-top: 0px;
         .boxImg{
             img{
                 height: 500px;
@@ -262,7 +271,7 @@ footer {
         padding: 0;
         img { 
             box-shadow: none;
-            @include img-size (99%, 600px)
+            @include img-size (99%, 450px)
         }
     }
     .seccionInicios {
@@ -298,6 +307,7 @@ footer {
     .masNotas {
         color: $txt-color;
         border: 1px solid white;
+        background-color: rgba(192, 192, 192, 0);
         ul{
             li{
                 a{
@@ -311,16 +321,249 @@ footer {
 
     h1{
         color: $txt-color;
+        text-align: center;
+        margin-top: 25px;
     }
     .form-container {
-        margin-top: 15px;
+        form{
+            padding: 0px;
+            width: 90%;
+            .btn{
+                display: flex;
+                margin: auto;
+            }
+        }
     }
-    .footerContacto {
-        position: static;
-        margin-top: 15px;
+}
+
+/* tablet */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    main {
+        background-image: none;
+    }
+    
+    .headerPrincipal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        .navbar-brand {
+            margin: auto;
+        }
+        nav {
+            .navbar-nav{
+                flex-direction: column;
+                align-items: start;
+                li{
+                    border-left: 0px;
+                    padding-left: 0px;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    footer {
+        margin-top: 10px;
+        padding-top: 0;
         ul {
             justify-content: center;
             margin: auto;
+            padding: 0;
+        }
+    }
+    
+    /* index */
+    
+    .carousel img {
+        height: 660px;
+    }
+    .sobreMi {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+        .textoSobreMi {
+            width: 90%;
+            padding-top: 0px;
+            h2 {
+                margin-top: 25px;
+                color: $txt-color;
+            }
+            p {
+                color: $txt-color;
+                background-color: rgba(192, 192, 192, 0);
+            }
+        }
+        .imgSobreMi {
+            margin: 0px;
+            img {
+                margin-top: 25px;
+            }
+        }  
+    }
+    .iframesIndex {
+        flex-direction: column;
+        aside {
+            margin-bottom: 15px;
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+    .sponsorSection {
+        flex-direction: column;
+        justify-content: space-around;
+        .sponsorLeft {
+            align-items: center;
+            .imgTxtIndex {
+                display: none;
+            }
+            .sponsorSectionTxt{
+                margin-top: 15px;
+                width: 90%;
+                height: auto;
+                text-align: justify;
+                h2{
+                    color: $txt-color;
+                    text-decoration: overline;
+                }
+                p{
+                    color: $txt-color;
+                    background-color: rgba(192, 192, 192, 0);
+                }
+            }
+        }
+        .sponsorSectionImg {
+            .indexImg {
+                display: none;
+            }
+            .indexLogo{
+                justify-content: center;
+            }
+        }
+    }
+
+    /* cursos */
+
+    .seccionCursos{
+        img {
+            margin-left: 0;
+            box-shadow: none;
+            @include img-size(auto, 750px)
+        }
+        .cursoConteiner {
+            flex-direction: column;
+            margin: 0;
+            .adentroCurso {
+                flex-direction: column;
+                box-shadow: none;
+                margin: 0px;
+                p {
+                    margin-top: 10px;
+                }
+            }
+        }
+    } 
+
+    /* galeria */
+
+    .imgConteiner {
+        width: 99%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 0px;
+        padding-top: 0px;
+        .boxImg{
+            img{
+                height: 1000px;
+            }
+            &:nth-child(1){
+                display: none;
+            }
+            &:nth-child(2){
+                grid-row-start: span 1;
+            }
+            &:nth-child(4){
+                grid-row-start: span 1;
+            }
+            &:nth-child(7){
+                grid-row-start: span 1;
+            }
+            &:nth-child(8){
+                grid-column-start: span 1;
+            }
+        }
+    }
+
+    /* biografia */
+
+    .biografiaMain {
+        padding: 0;
+        img { 
+            box-shadow: none;
+            @include img-size (99%, 750px)
+        }
+    }
+    .seccionInicios {
+        display: flex;
+        flex-direction: column;
+        .textoInicios {
+            box-shadow: none;
+            p {
+                width: auto;
+            }
+        }
+    }
+    .seccionCompitiendo {
+        flex-direction: column;
+        margin-top: 0;
+        .textoCompitiendo {
+            box-shadow: none;
+            p {
+                width: auto;
+            }
+        }
+    }
+    .seccionAlDiaDeHoy {
+        flex-direction: column;
+        margin-top: 0;
+        .textoAlDiaDeHoy {
+            box-shadow: none;
+            p {
+                width: auto;
+            }
+        }
+    }
+    .masNotas {
+        color: $txt-color;
+        border: 1px solid white;
+        background-color: rgba(192, 192, 192, 0);
+        ul{
+            li{
+                a{
+                    color: $txt-color;
+                }
+            }
+        }
+    }
+
+    /* contacto*/
+
+    h1{
+        color: $txt-color;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .form-container {
+        form{
+            padding: 0px;
+            width: 90%;
+            .btn{
+                display: flex;
+                margin: auto;
+            }
         }
     }
 } 
