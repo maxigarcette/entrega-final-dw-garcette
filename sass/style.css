@@ -90,6 +90,49 @@
   width: 100px;
 }
 
+.mediaContainer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.mediaContainer .imgScrollIndex img {
+  height: 500px;
+  width: 400px;
+  border-radius: 150px;
+  border: 1px solid black;
+}
+
+.finIndex {
+  color: black;
+}
+.finIndex .iframesIndexDos {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.finIndex .iframesIndexDos iframe {
+  width: 80%;
+}
+.finIndex .textoFinIndex {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+}
+.finIndex .textoFinIndex .mtBaker {
+  text-decoration: overline;
+}
+.finIndex .textoFinIndex h3 {
+  font-size: x-large;
+}
+.finIndex .textoFinIndex p {
+  text-align: justify;
+  background-color: rgba(192, 192, 192, 0.7);
+  border-radius: 5px;
+}
+
 .seccionCursos {
   display: flex;
   flex-direction: column;
@@ -411,8 +454,8 @@ footer ul li .logoRedes {
     margin: auto;
   }
   .headerPrincipal .navbar-brand img {
-    width: 300px;
-    height: 80px;
+    width: 200px;
+    height: 55px;
   }
   .headerPrincipal nav .navbar-nav {
     flex-direction: column;
@@ -435,7 +478,7 @@ footer ul li .logoRedes {
   }
   /* index */
   .carousel img {
-    height: 400px;
+    height: 250px;
   }
   .sobreMi {
     flex-direction: column;
@@ -498,6 +541,37 @@ footer ul li .logoRedes {
   }
   .sponsorSection .sponsorSectionImg .indexLogo {
     justify-content: center;
+  }
+  .mediaContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .mediaContainer .iframesIndexDos iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+  }
+  .mediaContainer .imgScrollIndex img {
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+    border-radius: 0;
+  }
+  .finIndex {
+    display: flex;
+    flex-direction: column;
+  }
+  .finIndex .iframesIndexDos iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
+  }
+  .finIndex .textoFinIndex {
+    width: 90%;
+    color: whitesmoke;
+  }
+  .finIndex .textoFinIndex p {
+    background-color: rgba(192, 192, 192, 0);
   }
   /* cursos */
   .seccionCursos img {
@@ -704,6 +778,32 @@ footer ul li .logoRedes {
   }
   .sponsorSection .sponsorSectionImg .indexLogo {
     justify-content: center;
+  }
+  .mediaContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .mediaContainer .imgScrollIndex img {
+    margin-top: 10px;
+    height: 800px;
+    width: 100%;
+    border-radius: 0;
+  }
+  .finIndex {
+    display: flex;
+    flex-direction: column;
+  }
+  .finIndex .iframesIndexDos iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 400px;
+  }
+  .finIndex .textoFinIndex {
+    width: 90%;
+    color: whitesmoke;
+  }
+  .finIndex .textoFinIndex p {
+    background-color: rgba(192, 192, 192, 0);
   }
   /* cursos */
   .seccionCursos img {
