@@ -264,8 +264,8 @@ footer {
             margin: 0;
             .adentroCurso {
                 flex-direction: column;
-                box-shadow: none;
                 margin: 0px;
+                align-items: center;
                 p {
                     margin-top: 10px;
                 }
@@ -308,7 +308,6 @@ footer {
     .biografiaMain {
         padding: 0;
         img { 
-            box-shadow: none;
             @include img-size (99%, 450px)
         }
     }
@@ -316,7 +315,6 @@ footer {
         display: flex;
         flex-direction: column;
         .textoInicios {
-            box-shadow: none;
             p {
                 width: auto;
             }
@@ -326,7 +324,6 @@ footer {
         flex-direction: column;
         margin-top: 0;
         .textoCompitiendo {
-            box-shadow: none;
             p {
                 width: auto;
             }
@@ -336,7 +333,6 @@ footer {
         flex-direction: column;
         margin-top: 0;
         .textoAlDiaDeHoy {
-            box-shadow: none;
             p {
                 width: auto;
             }
@@ -518,7 +514,6 @@ footer {
     .seccionCursos{
         img {
             margin-left: 0;
-            box-shadow: none;
             @include img-size(auto, 750px)
         }
         .cursoConteiner {
@@ -526,8 +521,8 @@ footer {
             margin: 0;
             .adentroCurso {
                 flex-direction: column;
-                box-shadow: none;
                 margin: 0px;
+                align-items: center;
                 p {
                     margin-top: 10px;
                 }
@@ -570,15 +565,13 @@ footer {
     .biografiaMain {
         padding: 0;
         img { 
-            box-shadow: none;
-            @include img-size (99%, 750px)
+            @include img-size (99%, 850px)
         }
     }
     .seccionInicios {
         display: flex;
         flex-direction: column;
         .textoInicios {
-            box-shadow: none;
             p {
                 width: auto;
             }
@@ -588,7 +581,6 @@ footer {
         flex-direction: column;
         margin-top: 0;
         .textoCompitiendo {
-            box-shadow: none;
             p {
                 width: auto;
             }

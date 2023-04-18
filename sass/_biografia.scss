@@ -3,7 +3,6 @@
     flex-direction: column;
     padding-top: 25px;
     img{
-        box-shadow: $sombra-principal;
         @include img-size (400px, 500px);
     }
 }
@@ -17,14 +16,14 @@
 .seccionCompitiendo {
     @include bio-seccion;
     flex-direction: row-reverse;
-    margin-top: 75px;
+    margin-top: 50px;
     .textoCompitiendo {
         @include bio-card;
     }
 }
 .seccionAlDiaDeHoy {
     @include bio-seccion;
-    margin-top: 75px;
+    margin-top: 50px;
     .textoAlDiaDeHoy {
         @include bio-card;
     }

@@ -4,7 +4,6 @@
     padding-top: 50px;
     img {
         @include img-size(400px, 600px);
-        box-shadow: $sombra-principal;
         margin-left: 25px;
     }
     .cursoConteiner {
