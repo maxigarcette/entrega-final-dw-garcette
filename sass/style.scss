@@ -40,8 +40,8 @@ main {
     display: flex;
     justify-content: space-between;
     z-index: 100;
-    a{
-        img{
+    .navbar-brand{
+        .logo-io{
             height: 100px;
             width: 350px;
             margin: 10px;

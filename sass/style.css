@@ -184,6 +184,10 @@
   -o-object-fit: cover;
      object-fit: cover;
   border: 3px solid black;
+  transition: 0.3s ease all;
+}
+.imgConteiner .boxImg img:hover {
+  transform: scale(1.04);
 }
 .imgConteiner .boxImg:nth-child(1) {
   grid-column-start: span 2;
@@ -394,7 +398,7 @@ main {
   justify-content: space-between;
   z-index: 100;
 }
-.headerPrincipal a img {
+.headerPrincipal .navbar-brand .logo-io {
   height: 100px;
   width: 350px;
   margin: 10px;
