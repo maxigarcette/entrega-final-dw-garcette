@@ -637,6 +637,7 @@ footer ul li .logoRedes {
   }
   .videoBox {
     flex-direction: column;
+    padding: 0;
   }
   .videoBox iframe {
     border: none;
@@ -875,6 +876,7 @@ footer ul li .logoRedes {
   }
   .videoBox {
     flex-direction: column;
+    padding: 0;
   }
   .videoBox iframe {
     border: none;
