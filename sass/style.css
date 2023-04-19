@@ -465,7 +465,7 @@ footer ul li .logoRedes {
   .headerPrincipal .navbar-brand {
     margin: auto;
   }
-  .headerPrincipal .navbar-brand img {
+  .headerPrincipal .navbar-brand .logo-io {
     width: 200px;
     height: 55px;
   }
