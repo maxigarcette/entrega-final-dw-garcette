@@ -11,7 +11,6 @@ $header-txt-color: whitesmoke;
 }
 
 @mixin cursos-card-layout {
-    box-shadow: $sombra-principal;
     padding: 25px;
     display: flex ;
     flex-direction: column;
@@ -24,7 +23,6 @@ $header-txt-color: whitesmoke;
 @mixin bio-card {
     display: flex;
     flex-direction: column;
-    box-shadow: $sombra-principal;
     padding: 25px;
     background-color: $card-bg-color;
     h2 {

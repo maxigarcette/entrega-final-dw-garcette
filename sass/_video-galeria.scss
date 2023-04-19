@@ -1,0 +1,21 @@
+#carouselExampleIndicators {
+    width: 90%;
+    padding-top: 40px;
+    margin: auto;
+    .carousel-inner {
+        .carousel-item {
+            iframe {
+                height: 600px;
+            }
+        }
+    }
+}
+
+.videoBox {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    iframe {
+        border: 1px solid black;
+    }  
+}

@@ -141,7 +141,6 @@
 .seccionCursos img {
   height: 600px;
   width: 400px;
-  box-shadow: none;
   margin-left: 25px;
 }
 .seccionCursos .cursoConteiner {
@@ -149,7 +148,6 @@
   margin-bottom: 25px;
 }
 .seccionCursos .cursoConteiner .adentroCurso {
-  box-shadow: none;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -203,6 +201,24 @@
   grid-column-start: span 2;
 }
 
+#carouselExampleIndicators {
+  width: 90%;
+  padding-top: 40px;
+  margin: auto;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item iframe {
+  height: 600px;
+}
+
+.videoBox {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+.videoBox iframe {
+  border: 1px solid black;
+}
+
 .biografiaMain {
   display: flex;
   flex-direction: column;
@@ -221,7 +237,6 @@
 .seccionInicios .textoInicios {
   display: flex;
   flex-direction: column;
-  box-shadow: none;
   padding: 25px;
   background-color: black;
 }
@@ -246,7 +261,6 @@
 .seccionCompitiendo .textoCompitiendo {
   display: flex;
   flex-direction: column;
-  box-shadow: none;
   padding: 25px;
   background-color: black;
 }
@@ -270,7 +284,6 @@
 .seccionAlDiaDeHoy .textoAlDiaDeHoy {
   display: flex;
   flex-direction: column;
-  box-shadow: none;
   padding: 25px;
   background-color: black;
 }
@@ -398,21 +411,17 @@ main {
   display: flex;
   align-items: center;
 }
-.headerPrincipal nav .navbar-nav li {
+.headerPrincipal nav .navbar-nav .nav-item {
   list-style: none;
   margin: 7px 5px;
-  border-left: 3px solid white;
   padding-left: 10px;
 }
-.headerPrincipal nav .navbar-nav li:nth-child(1) {
-  border-left: 0px;
-}
-.headerPrincipal nav .navbar-nav li a {
+.headerPrincipal nav .navbar-nav .nav-item a {
   color: whitesmoke;
   font-size: 1.3rem;
   text-decoration: none;
 }
-.headerPrincipal nav .navbar-nav li a:hover {
+.headerPrincipal nav .navbar-nav .nav-item a:hover {
   color: blueviolet;
 }
 
@@ -592,6 +601,7 @@ footer ul li .logoRedes {
     margin-top: 10px;
   }
   /* galeria */
+  /* fotos */
   .imgConteiner {
     width: 99%;
     grid-template-columns: repeat(1, 1fr);
@@ -616,6 +626,22 @@ footer ul li .logoRedes {
   }
   .imgConteiner .boxImg:nth-child(8) {
     grid-column-start: span 1;
+  }
+  /* videos */
+  #carouselExampleIndicators {
+    width: 100%;
+  }
+  #carouselExampleIndicators .carousel-inner .carousel-item iframe {
+    height: 350px;
+  }
+  .videoBox {
+    flex-direction: column;
+  }
+  .videoBox iframe {
+    border: none;
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
   }
   /* biografia */
   .biografiaMain {
@@ -812,6 +838,7 @@ footer ul li .logoRedes {
     margin-top: 10px;
   }
   /* galeria */
+  /* fotos */
   .imgConteiner {
     width: 99%;
     grid-template-columns: repeat(1, 1fr);
@@ -836,6 +863,22 @@ footer ul li .logoRedes {
   }
   .imgConteiner .boxImg:nth-child(8) {
     grid-column-start: span 1;
+  }
+  /* videos */
+  #carouselExampleIndicators {
+    width: 100%;
+  }
+  #carouselExampleIndicators .carousel-inner .carousel-item iframe {
+    height: 660px;
+  }
+  .videoBox {
+    flex-direction: column;
+  }
+  .videoBox iframe {
+    border: none;
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
   }
   /* biografia */
   .biografiaMain {
