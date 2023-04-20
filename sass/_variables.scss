@@ -5,6 +5,13 @@ $txt-color-index: black;
 $header-color: black;
 $header-txt-color: whitesmoke;
 
+@mixin animacion ($escala){
+    transition: 0.3s ease all;
+    &:hover {
+        transform: scale($escala);
+    }
+}
+
 @mixin img-size ($width, $height) {
     height: $height;
     width: $width;

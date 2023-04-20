@@ -16,6 +16,7 @@
             margin-bottom: 15px;
             text-decoration-line: overline;
             color: $txt-color-index;
+            padding-left: 5px;
         }
         p {
             text-align: justify;
@@ -23,6 +24,7 @@
             color: $txt-color-index;
             background-color: rgba(192, 192, 192, .6);
             border-radius: 5px;
+            padding: 5px;
         }
 
     }
@@ -45,26 +47,21 @@
     .sponsorLeft {
         display: flex;
         flex-direction: column;
-        .imgTxtIndex{
-            img{
-                height: 400px;
-                width: 230px;
-                margin-left: -25px;
-                margin-top: -150px;
-            }
-        }
+        justify-content: center;
         .sponsorSectionTxt{
-            height: 250px;
-            width: 550px;
+            width: 600px;
             h2{
+                padding-left: 5px;
                 color: $txt-color-index;
+                text-decoration: overline;
             }
             p{
                 text-align: justify;
                 font-weight: 900;
                 color: $txt-color-index;
                 background-color: rgba(192, 192, 192, .6);
-                border-radius: 5px; 
+                border-radius: 5px;
+                padding: 5px;
             }
         }
     }
@@ -85,6 +82,7 @@
                 border-radius: 50%;
                 height: 100px;
                 width: 100px;
+                @include animacion (1.07);
             }  
         }
     }
@@ -99,6 +97,7 @@
             @include img-size (400px, 500px);
             border-radius: 150px;
             border: 1px solid black;
+            @include animacion (1.05);
         }
     }
 }
@@ -129,7 +128,8 @@
         p {
             text-align: justify;
             background-color: rgba(192, 192, 192, .7);
-            border-radius: 5px; 
+            border-radius: 5px;
+            padding: 5px;
         }
     }
 }

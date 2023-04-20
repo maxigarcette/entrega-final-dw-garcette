@@ -155,8 +155,10 @@ footer {
             h2 {
                 margin-top: 25px;
                 color: $txt-color;
+                padding: 0;
             }
             p {
+                padding: 0;
                 color: $txt-color;
                 background-color: rgba(192, 192, 192, 0);
             }
@@ -180,11 +182,9 @@ footer {
     .sponsorSection {
         flex-direction: column;
         justify-content: space-around;
+        margin: 0;
         .sponsorLeft {
             align-items: center;
-            .imgTxtIndex {
-                display: none;
-            }
             .sponsorSectionTxt{
                 margin-top: 15px;
                 width: 90%;
@@ -193,10 +193,12 @@ footer {
                 h2{
                     color: $txt-color;
                     text-decoration: overline;
+                    padding: 0;
                 }
                 p{
                     color: $txt-color;
                     background-color: rgba(192, 192, 192, 0);
+                    padding: 0;
                 }
             }
         }
@@ -216,7 +218,7 @@ footer {
         .iframesIndexDos {
             iframe {
                 margin-top: 10px;
-                width: 100%;
+                width: 99%;
                 height: 200px;
             }       
         }
@@ -225,6 +227,7 @@ footer {
                 margin-top: 20px;
                 @include img-size (100%,400px);
                 border-radius: 0;
+                @include animacion (1);
             }
         }
     }
@@ -243,6 +246,7 @@ footer {
             width: 90%;
             color: $txt-color;
             p {
+                padding: 0;
                 background-color: rgba(192, 192, 192, 0);
             } 
         }
@@ -283,6 +287,7 @@ footer {
         .boxImg{
             img{
                 height: 500px;
+                @include animacion (1);
             }
             &:nth-child(1){
                 display: none;
@@ -510,6 +515,7 @@ footer {
                 margin-top: 10px;
                 @include img-size (100%,800px);
                 border-radius: 0;
+                @include animacion (1);
             }
         }
     }
@@ -567,6 +573,7 @@ footer {
         .boxImg{
             img{
                 height: 1000px;
+                @include animacion (1);
             }
             &:nth-child(1){
                 display: none;

@@ -20,6 +20,7 @@
   margin-bottom: 15px;
   text-decoration-line: overline;
   color: black;
+  padding-left: 5px;
 }
 .sobreMi .textoSobreMi p {
   text-align: justify;
@@ -27,6 +28,7 @@
   color: black;
   background-color: rgba(192, 192, 192, 0.6);
   border-radius: 5px;
+  padding: 5px;
 }
 .sobreMi .imgSobreMi {
   margin-right: 25px;
@@ -50,19 +52,15 @@
 .sponsorSection .sponsorLeft {
   display: flex;
   flex-direction: column;
-}
-.sponsorSection .sponsorLeft .imgTxtIndex img {
-  height: 400px;
-  width: 230px;
-  margin-left: -25px;
-  margin-top: -150px;
+  justify-content: center;
 }
 .sponsorSection .sponsorLeft .sponsorSectionTxt {
-  height: 250px;
-  width: 550px;
+  width: 600px;
 }
 .sponsorSection .sponsorLeft .sponsorSectionTxt h2 {
+  padding-left: 5px;
   color: black;
+  text-decoration: overline;
 }
 .sponsorSection .sponsorLeft .sponsorSectionTxt p {
   text-align: justify;
@@ -70,6 +68,7 @@
   color: black;
   background-color: rgba(192, 192, 192, 0.6);
   border-radius: 5px;
+  padding: 5px;
 }
 .sponsorSection .sponsorSectionImg {
   display: flex;
@@ -88,6 +87,10 @@
   border-radius: 50%;
   height: 100px;
   width: 100px;
+  transition: 0.3s ease all;
+}
+.sponsorSection .sponsorSectionImg .indexLogo img:hover {
+  transform: scale(1.07);
 }
 
 .mediaContainer {
@@ -100,6 +103,10 @@
   width: 400px;
   border-radius: 150px;
   border: 1px solid black;
+  transition: 0.3s ease all;
+}
+.mediaContainer .imgScrollIndex img:hover {
+  transform: scale(1.05);
 }
 
 .finIndex {
@@ -131,6 +138,7 @@
   text-align: justify;
   background-color: rgba(192, 192, 192, 0.7);
   border-radius: 5px;
+  padding: 5px;
 }
 
 .seccionCursos {
@@ -504,8 +512,10 @@ footer ul li .logoRedes {
   .sobreMi .textoSobreMi h2 {
     margin-top: 25px;
     color: whitesmoke;
+    padding: 0;
   }
   .sobreMi .textoSobreMi p {
+    padding: 0;
     color: whitesmoke;
     background-color: rgba(192, 192, 192, 0);
   }
@@ -527,12 +537,10 @@ footer ul li .logoRedes {
   .sponsorSection {
     flex-direction: column;
     justify-content: space-around;
+    margin: 0;
   }
   .sponsorSection .sponsorLeft {
     align-items: center;
-  }
-  .sponsorSection .sponsorLeft .imgTxtIndex {
-    display: none;
   }
   .sponsorSection .sponsorLeft .sponsorSectionTxt {
     margin-top: 15px;
@@ -543,10 +551,12 @@ footer ul li .logoRedes {
   .sponsorSection .sponsorLeft .sponsorSectionTxt h2 {
     color: whitesmoke;
     text-decoration: overline;
+    padding: 0;
   }
   .sponsorSection .sponsorLeft .sponsorSectionTxt p {
     color: whitesmoke;
     background-color: rgba(192, 192, 192, 0);
+    padding: 0;
   }
   .sponsorSection .sponsorSectionImg .indexImg {
     display: none;
@@ -560,7 +570,7 @@ footer ul li .logoRedes {
   }
   .mediaContainer .iframesIndexDos iframe {
     margin-top: 10px;
-    width: 100%;
+    width: 99%;
     height: 200px;
   }
   .mediaContainer .imgScrollIndex img {
@@ -568,6 +578,10 @@ footer ul li .logoRedes {
     height: 400px;
     width: 100%;
     border-radius: 0;
+    transition: 0.3s ease all;
+  }
+  .mediaContainer .imgScrollIndex img:hover {
+    transform: scale(1);
   }
   .finIndex {
     display: flex;
@@ -583,6 +597,7 @@ footer ul li .logoRedes {
     color: whitesmoke;
   }
   .finIndex .textoFinIndex p {
+    padding: 0;
     background-color: rgba(192, 192, 192, 0);
   }
   /* cursos */
@@ -615,6 +630,10 @@ footer ul li .logoRedes {
   }
   .imgConteiner .boxImg img {
     height: 500px;
+    transition: 0.3s ease all;
+  }
+  .imgConteiner .boxImg img:hover {
+    transform: scale(1);
   }
   .imgConteiner .boxImg:nth-child(1) {
     display: none;
@@ -808,6 +827,10 @@ footer ul li .logoRedes {
     height: 800px;
     width: 100%;
     border-radius: 0;
+    transition: 0.3s ease all;
+  }
+  .mediaContainer .imgScrollIndex img:hover {
+    transform: scale(1);
   }
   .finIndex {
     display: flex;
@@ -854,6 +877,10 @@ footer ul li .logoRedes {
   }
   .imgConteiner .boxImg img {
     height: 1000px;
+    transition: 0.3s ease all;
+  }
+  .imgConteiner .boxImg img:hover {
+    transform: scale(1);
   }
   .imgConteiner .boxImg:nth-child(1) {
     display: none;
