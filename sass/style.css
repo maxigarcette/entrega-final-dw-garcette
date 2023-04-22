@@ -135,6 +135,7 @@
   font-size: x-large;
 }
 .finIndex .textoFinIndex p {
+  font-weight: 900;
   text-align: justify;
   background-color: rgba(192, 192, 192, 0.7);
   border-radius: 5px;
